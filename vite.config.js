@@ -16,8 +16,7 @@ export default defineConfig({
     host: true,
     port: 5173,
     allowedHosts: [
-      "namandeep-gilhotra-website.vercel.app",
-      "namandeep-gilhotra.vercel.app",
+      "https://aman-personal-acc.github.io/namandeep-gilhotra-website/"
     ],
     open: true,
   },
