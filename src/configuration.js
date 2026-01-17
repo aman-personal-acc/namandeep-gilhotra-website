@@ -17,7 +17,7 @@ const config = {
     // About Section
     about: {
         title: "About",
-        image: "/profile.png", // Can be local path or remote URL
+        image: "https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/refs/heads/main/public/profile.png", // Can be local path or remote URL
         content: [
             "Namandeep Gilhotra is a contemporary poet and writer whose work explores themes of identity, belonging, and the human experience. Born in Punjab, India, Gilhotra's writing draws from a rich cultural heritage while addressing universal themes that resonate across borders.",
             "Known for a distinctive voice that blends traditional poetic forms with modern sensibilities, Gilhotra has garnered recognition for contributions to contemporary literature. Their work has been featured in numerous literary journals and anthologies.",
@@ -78,7 +78,7 @@ const config = {
         description: "A collection of photographs and moments",
         images: [
             // You can use local paths (relative to public folder)
-            "/profile.png",
+            "https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/refs/heads/main/public/profile.png",
             // Or remote URLs
             "https://raw.githubusercontent.com/ServiceStack/images/refs/heads/master/hero/photo-1421789665209-c9b2a435e3dc.jpg",
             "https://raw.githubusercontent.com/ServiceStack/images/refs/heads/master/hero/photo-1429552054921-018e433d7d34.jpg",
