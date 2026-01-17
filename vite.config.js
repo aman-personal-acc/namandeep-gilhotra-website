@@ -12,12 +12,10 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
+  base: "/namandeep-gilhotra-website/",
   server: {
     host: true,
     port: 5173,
-    allowedHosts: [
-      "https://aman-personal-acc.github.io/namandeep-gilhotra-website/"
-    ],
     open: true,
   },
 })
