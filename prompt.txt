@@ -1,0 +1,33 @@
+1. 
+बचपन में cerbal pusley  से निकलकर अपनी प्रारम्भिक शिक्षा के बाद क्लास 8 में धीरे धीरे काव्य की ओर रूझान बढ़ता रहा। क्लास 8 से स्कूल के सांस्कृतिक कार्यक्रम में हिस्सा लेना प्रारंभ कर दिया और अपनी रचनाओं को न्यूज पेपर के माध्यम से प्रकाशित करवाने लेगे पहला मंच अखिल भारतीय विद्यार्थी परिषद् के प्रान्त अधिवेशन में मिला
+उनके बाद जिला बिजनौर के लोकप्रिय संध्या अखबार पब्लिक इमोशन ने जनपद स्तरीय कवि सम्मेलन में अवसर दिया जिसके बाद जिला स्तरीय कवियों के संपर्क आए उसके बाद गाजियाबाद की ललित फाऊंडेशन के अधिवेशन में। राष्ट्रीय कवि डाक्टर हरिओम पंवार से सम्मानित होने का मौका मिला उसके बाद आकाशवाणी, बिजनौर महोत्सव में जिला विकास अधिकारी के द्वारा युवा कवि के रूप में सम्मानित होने का अवसर मिला
+
+: in the about section as content while maintaing the proper paragraphs 
+
+2. Add proper education in the corresponding section : 
+
+Education 
+B pharma 
+
+
+Bagwant global University 
+Kotdwar
+
+3. HIghlighting Poetry : 
+
+उस माँ को नमन जिसने अपने पुत्र का बलिदान किया,
+उस मांग को नमन जिसने अपना सिंदूर माँ भारती पर कुर्बान किया,
+उस रक्षा के बंधन को नमन जिसने अपने भाई बलिदान किए,
+उस पिता की सहनशक्ति को नमन जिसने अपने बुढ़ापे की रोशनी अंधकार में बदल दी,
+उस बेटे को नमन जिसने अपने पिता को कुर्बान किया,
+नमन-नमन उस परिवार को जिसने अपने वंश के दीप का परित्याग किया।
+
+~ Naman Deep Gilhotra (Kranti)
+
+: Add this quote as highlighting quote exactly similar to wikipedia
+
+4. Also update the name to be : 
+
+Naman Deep Gilhotra (Kranti) 
+
+- Other than this each and every data except the images is mock data create a comprehensive list in LIST.md file stating all the sections and data i will be needing of person to make this wikipedia site looking proper and user specific 

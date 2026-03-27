@@ -4,8 +4,7 @@
 const config = {
     // Profile Information
     profile: {
-        // (MOCK DATA FOR TESTING)
-        name: "Naman Deep Gilhotra (Kranti)",
+        name: "Namandeep Gilhotra",
         title: "Poet & Writer",
         profileImage: "/profile.png", // Path relative to public folder
         bio: "A contemporary poet and writer known for evocative verse and profound storytelling.",
@@ -17,30 +16,26 @@ const config = {
 
     // About Section
     about: {
-        title: "About (MOCK DATA FOR TESTING)",
+        title: "About",
         image: "https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/refs/heads/main/public/profile.png", // Can be local path or remote URL
         content: [
-            // (MOCK DATA FOR TESTING)
-            "Naman Deep Gilhotra (Kranti) is a contemporary poet and writer whose work explores themes of identity, belonging, and the human experience. Born in Punjab, India, Gilhotra's writing draws from a rich cultural heritage while addressing universal themes that resonate across borders.",
+            "Namandeep Gilhotra is a contemporary poet and writer whose work explores themes of identity, belonging, and the human experience. Born in Punjab, India, Gilhotra's writing draws from a rich cultural heritage while addressing universal themes that resonate across borders.",
             "Known for a distinctive voice that blends traditional poetic forms with modern sensibilities, Gilhotra has garnered recognition for contributions to contemporary literature. Their work has been featured in numerous literary journals and anthologies.",
-            "बचपन में Cerbal Paisley से निकलकर अपनी प्रारम्भिक शिक्षा के बाद क्लास 8 में धीरे धीरे काव्य की ओर रूझान बढ़ता रहा। क्लास 8 से स्कूल के सांस्कृतिक कार्यक्रम में हिस्सा लेना प्रारंभ कर दिया और अपनी रचनाओं को न्यूज पेपर के माध्यम से प्रकाशित करवाने लगे। पहला मंच अखिल भारतीय विद्यार्थी परिषद् के प्रान्त अधिवेशन में मिला। उसके बाद जिला बिजनौर के लोकप्रिय संध्या अखबार 'पब्लिक इमोशन' ने जनपद स्तरीय कवि सम्मेलन में अवसर दिया। जिला स्तरीय कवियों के संपर्क आने के बाद गाजियाबाद की ललित फाउंडेशन के अधिवेशन में राष्ट्रीय कवि डॉक्टर हरिओम पंवार से सम्मानित होने का मौका मिला। उसके बाद आकाशवाणी, बिजनौर महोत्सव में जिला विकास अधिकारी के द्वारा युवा कवि के रूप में सम्मानित होने का अवसर मिला।",
         ],
     },
 
     // Life and Career Section
     lifeAndCareer: {
-        title: "Life and Career (MOCK DATA FOR TESTING)",
+        title: "Life and Career",
         sections: [
             {
                 heading: "Early Life",
-                // (MOCK DATA FOR TESTING)
                 content: [
                     "Gilhotra was born and raised in Punjab, India, where they developed an early appreciation for poetry and storytelling. Influenced by both classical Punjabi literature and contemporary global voices, they began writing at a young age.",
                 ],
             },
             {
                 heading: "Literary Career",
-                // (MOCK DATA FOR TESTING)
                 content: [
                     "Gilhotra's literary career began in earnest in 2010 with the publication of their first collection of poems. Since then, they have published multiple works that have been critically acclaimed for their emotional depth and linguistic precision.",
                     "Their writing often explores the intersection of personal and collective memory, drawing on experiences of migration, cultural identity, and the search for meaning in a rapidly changing world.",
@@ -48,7 +43,6 @@ const config = {
             },
             {
                 heading: "Recognition",
-                // (MOCK DATA FOR TESTING)
                 content: [
                     "Over the years, Gilhotra has received several awards and honors for their contributions to literature. Their work continues to inspire readers and fellow writers alike.",
                 ],
@@ -58,9 +52,8 @@ const config = {
 
     // Poetrys Section
     poetrys: {
-        title: "Poetrys by Namandeep Gilhotra (MOCK DATA FOR TESTING)",
+        title: "Poetrys by Namandeep Gilhotra",
         poems: [
-            // (MOCK DATA FOR TESTING)
             {
                 title: "Whispers of Home",
                 year: "2015",
@@ -81,11 +74,12 @@ const config = {
 
     // Media Section (Gallery)
     media: {
-        title: "Media (MOCK DATA FOR TESTING)",
-        description: "A collection of photographs and moments (MOCK DATA FOR TESTING)",
+        title: "Media",
+        description: "A collection of photographs and moments",
         images: [
-            // (MOCK DATA FOR TESTING)
+            // You can use local paths (relative to public folder)
             "https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/refs/heads/main/public/profile.png",
+            // Or remote URLs
             "https://raw.githubusercontent.com/ServiceStack/images/refs/heads/master/hero/photo-1421789665209-c9b2a435e3dc.jpg",
             "https://raw.githubusercontent.com/ServiceStack/images/refs/heads/master/hero/photo-1429552054921-018e433d7d34.jpg",
             "https://raw.githubusercontent.com/ServiceStack/images/refs/heads/master/hero/photo-1464621922360-27f3bf0eca75.jpg",
@@ -96,16 +90,8 @@ const config = {
 
     // Education Section
     education: {
-        title: "Education (MOCK DATA FOR TESTING)",
+        title: "Education",
         institutions: [
-            // (MOCK DATA FOR TESTING)
-            {
-                degree: "Bachelor of Pharmacy (B.Pharma)",
-                institution: "Bagwant Global University",
-                year: "2024-Present",
-                description: "Pursuing pharmaceutical studies.",
-                location: "Kotdwar",
-            },
             {
                 degree: "Master of Arts in Creative Writing",
                 institution: "University of Punjab",
@@ -123,9 +109,8 @@ const config = {
 
     // Awards and Achievements Section
     awards: {
-        title: "Awards and Achievements (MOCK DATA FOR TESTING)",
+        title: "Awards and Achievements",
         items: [
-            // (MOCK DATA FOR TESTING)
             {
                 year: "2021",
                 title: "Literary Excellence Award",
@@ -145,15 +130,6 @@ const config = {
                 description: "Honored for the collection 'Whispers of Home'.",
             },
         ],
-    },
-
-    // Highlighted Quote Section
-    highlightedQuote: {
-        title: "Highlighted Work (MOCK DATA FOR TESTING)",
-        quote: "उस माँ को नमन जिसने अपने पुत्र का बलिदान किया,\nउस मांग को नमन जिसने अपना सिंदूर माँ भारती पर कुर्बान किया,\nउस रक्षा के बंधन को नमन जिसने अपने भाई बलिदान किए,\nउस पिता की सहनशक्ति को नमन जिसने अपने बुढ़ापे की रोशनी अंधकार में बदल दी,\nउस बेटे को नमन जिसने अपने पिता को कुर्बान किया,\nनमन-नमन उस परिवार को जिसने अपने वंश के दीप का परित्याग किया।",
-        author: "Naman Deep Gilhotra (Kranti)",
-        work: "Kranti",
-        // (MOCK DATA FOR TESTING)
     },
 
     // Custom Sections (Add your own sections here)
