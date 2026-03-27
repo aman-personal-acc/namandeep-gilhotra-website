@@ -4,14 +4,14 @@
 const config = {
     // Profile Information
     profile: {
-        name: "Namandeep Gilhotra",
+        name: "Naved Hasan",
         title: "Poet & Writer",
         profileImage: "/profile.png", // Path relative to public folder
         bio: "A contemporary poet and writer known for evocative verse and profound storytelling.",
         birthDate: "January 1, 1990",
         birthPlace: "Punjab, India",
         occupation: "Poet, Writer, Author",
-        yearsActive: "2010–present",
+        yearsActive: "2010-present",
     },
 
     // About Section
