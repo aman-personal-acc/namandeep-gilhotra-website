@@ -66,14 +66,72 @@ const AboutSection = () => {
               <th>Years active</th>
               <td>{profile.yearsActive}</td>
             </tr>
+            {profile.organizations && (
+              <tr>
+                <th>Organizations & Roles</th>
+                <td>{profile.organizations}</td>
+              </tr>
+            )}
+            {profile.genres && (
+              <tr>
+                <th>Genres</th>
+                <td>{profile.genres}</td>
+              </tr>
+            )}
+            {profile.languages && (
+              <tr>
+                <th>Languages</th>
+                <td>{profile.languages}</td>
+              </tr>
+            )}
+            {profile.almaMater && (
+              <tr>
+                <th>Alma mater</th>
+                <td>{profile.almaMater}</td>
+              </tr>
+            )}
+            {profile.notableWorks && (
+              <tr>
+                <th>Notable works</th>
+                <td>{profile.notableWorks}</td>
+              </tr>
+            )}
           </tbody>
         </table>
       </aside>
 
-      {/* Content */}
+      {/* Epigraph / Philosophy Quote */}
+      {about.epigraph && (
+        <blockquote className="wiki-epigraph">
+          “{about.epigraph}”
+        </blockquote>
+      )}
+
+      {/* Main Content */}
       <div>
-        {about.content.map((paragraph, index) => (
+        {about.content && about.content.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
+        ))}
+
+        {/* Subsections if available */}
+        {about.subsections && about.subsections.map((subsec, sIdx) => (
+          <div key={sIdx} style={{ marginTop: "1.5rem" }}>
+            <h3 style={{ fontSize: "1.2rem", borderBottom: "1px solid var(--border-color)", paddingBottom: "0.25rem", marginBottom: "0.75rem" }}>
+              {subsec.heading}
+            </h3>
+            {subsec.paragraphs && subsec.paragraphs.map((p, pIdx) => (
+              <p key={pIdx}>{p}</p>
+            ))}
+            {subsec.items && (
+              <ul style={{ paddingLeft: "1.5rem", lineHeight: "1.8", marginBottom: "1rem" }}>
+                {subsec.items.map((item, iIdx) => (
+                  <li key={iIdx} style={{ marginBottom: "0.5rem" }}>
+                    <strong>{item.title}:</strong> {item.description}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         ))}
       </div>
     </Section>

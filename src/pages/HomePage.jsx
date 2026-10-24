@@ -1,12 +1,20 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import AboutSection from '../components/sections/AboutSection';
+import HighlightedQuoteSection from '../components/sections/HighlightedQuoteSection';
 import LifeAndCareerSection from '../components/sections/LifeAndCareerSection';
 import EducationSection from '../components/sections/EducationSection';
 import PoetrysSection from '../components/sections/PoetrysSection';
 import AwardsSection from '../components/sections/AwardsSection';
+import PublishedWorksSection from '../components/sections/PublishedWorksSection';
+import LiteraryStyleSection from '../components/sections/LiteraryStyleSection';
+import MediaAppearancesSection from '../components/sections/MediaAppearancesSection';
+import TimelineSection from '../components/sections/TimelineSection';
 import MediaSection from '../components/sections/MediaSection';
+import ReferencesSection from '../components/sections/ReferencesSection';
+import ExternalLinksSection from '../components/sections/ExternalLinksSection';
 import CustomSection from '../components/sections/CustomSection';
+import TableOfContents from '../components/ui/TableOfContents';
 import config from '../configuration';
 import seriesConfig from '../series.config';
 
@@ -14,11 +22,18 @@ const HomePage = () => {
   // Map section IDs to their components
   const sectionComponents = {
     about: AboutSection,
+    highlightedQuote: HighlightedQuoteSection,
     lifeAndCareer: LifeAndCareerSection,
     education: EducationSection,
     poetrys: PoetrysSection,
     awards: AwardsSection,
+    publishedWorks: PublishedWorksSection,
+    literaryStyle: LiteraryStyleSection,
+    mediaAppearances: MediaAppearancesSection,
+    timeline: TimelineSection,
     media: MediaSection,
+    references: ReferencesSection,
+    externalLinks: ExternalLinksSection,
   };
 
   // Render sections based on series configuration
@@ -44,10 +59,18 @@ const HomePage = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}
+          style={{ fontSize: '2.5rem', marginBottom: '0.35rem' }}
         >
           {config.profile.name}
         </motion.h1>
+
+        {/* Wikipedia tagline */}
+        <div className="wiki-tagline">
+          From Wikipedia, the free encyclopedia
+        </div>
+
+        {/* Table of Contents */}
+        <TableOfContents />
         
         {/* Render sections based on series config */}
         {renderSections()}

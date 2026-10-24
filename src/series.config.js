@@ -3,25 +3,37 @@
 
 const seriesConfig = {
     // Define the order of sections
-    // Available sections: 'about', 'lifeAndCareer', 'education', 'poetrys', 'awards', 'media'
     sectionOrder: [
-        'about',           // About section with InfoBox
-        'lifeAndCareer',   // Life and Career section
-        'education',       // Education section
-        'poetrys',         // Poetrys by Namandeep Gilhotra
-        'awards',          // Awards and Achievements
-        'media',           // Media gallery
+        'about',              // About section with InfoBox
+        'highlightedQuote',   // Wikipedia-style Highlighted Work / Poetry quote
+        'lifeAndCareer',      // Life and Career section
+        'education',          // Education section (B.Pharma, etc.)
+        'poetrys',            // Notable poems & excerpts
+        'awards',             // Awards and Honours
+        'publishedWorks',     // Bibliography and published collections
+        'literaryStyle',      // Literary style, themes and influences
+        'mediaAppearances',   // Radio, Press, and cultural festivals
+        'timeline',           // Chronology & milestones
+        'media',              // Photo gallery preview
+        'references',         // Wikipedia-style numbered references
+        'externalLinks',      // External links and contact
     ],
 
-    // You can also disable sections by removing them from the array above
-    // or by setting them to false here:
+    // Toggle individual sections on/off
     enabledSections: {
         about: true,
+        highlightedQuote: true,
         lifeAndCareer: true,
         education: true,
         poetrys: true,
         awards: true,
+        publishedWorks: true,
+        literaryStyle: true,
+        mediaAppearances: true,
+        timeline: true,
         media: true,
+        references: true,
+        externalLinks: true,
     },
 };
 
