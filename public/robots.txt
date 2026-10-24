@@ -1,0 +1,6 @@
+# Robots.txt for Naman Deep Gilhotra 'Kranti' Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aman-personal-acc.github.io/namandeep-gilhotra-website/sitemap.xml

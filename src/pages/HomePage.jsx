@@ -11,10 +11,10 @@ import LiteraryStyleSection from '../components/sections/LiteraryStyleSection';
 import MediaAppearancesSection from '../components/sections/MediaAppearancesSection';
 import TimelineSection from '../components/sections/TimelineSection';
 import MediaSection from '../components/sections/MediaSection';
-import ReferencesSection from '../components/sections/ReferencesSection';
 import ExternalLinksSection from '../components/sections/ExternalLinksSection';
 import CustomSection from '../components/sections/CustomSection';
 import TableOfContents from '../components/ui/TableOfContents';
+import SEO from '../components/common/SEO';
 import config from '../configuration';
 import seriesConfig from '../series.config';
 
@@ -32,19 +32,31 @@ const HomePage = () => {
     mediaAppearances: MediaAppearancesSection,
     timeline: TimelineSection,
     media: MediaSection,
-    references: ReferencesSection,
     externalLinks: ExternalLinksSection,
   };
 
-  // Render sections based on series configuration
-  const renderSections = () => {
+  // Render remaining sections based on series configuration (excluding about since it's rendered first)
+  const renderRemainingSections = () => {
     return seriesConfig.sectionOrder
-      .filter(sectionId => seriesConfig.enabledSections[sectionId])
+      .filter(sectionId => sectionId !== 'about' && seriesConfig.enabledSections[sectionId])
       .map(sectionId => {
         const SectionComponent = sectionComponents[sectionId];
         return SectionComponent ? <SectionComponent key={sectionId} /> : null;
       });
   };
+
+  // Scroll to hash target on mount if present
+  React.useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.replace('#', '');
+      const elem = document.getElementById(id);
+      if (elem) {
+        setTimeout(() => {
+          elem.scrollIntoView({ behavior: 'smooth' });
+        }, 150);
+      }
+    }
+  }, []);
 
   return (
     <motion.div
@@ -53,36 +65,13 @@ const HomePage = () => {
       transition={{ duration: 0.5 }}
       className="container py-8"
     >
+      <SEO canonicalPath="/" />
       <div className="wiki-content">
-        {/* Main heading */}
-        <motion.h1 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          style={{ fontSize: '2.5rem', marginBottom: '1.25rem' }}
-        >
-          {config.profile.name}
-        </motion.h1>
-
-        {/* Lead Section: Engaging Profile on Left, Table of Contents on Right */}
-        <div className="wiki-lead-section">
-          <div className="wiki-lead-content">
-            {config.about.epigraph && (
-              <blockquote className="wiki-epigraph">
-                “{config.about.epigraph}”
-              </blockquote>
-            )}
-            <p className="wiki-lead-bio">
-              {config.profile.bio}
-            </p>
-          </div>
-          <div className="wiki-lead-toc">
-            <TableOfContents />
-          </div>
-        </div>
+        {/* Main About Section with title "Naman Deep Gilhotra 'Kranti'" */}
+        <AboutSection />
         
-        {/* Render sections based on series config */}
-        {renderSections()}
+        {/* Render remaining sections based on series config */}
+        {renderRemainingSections()}
         
         {/* Custom Sections */}
         {config.customSections.map((section) => (

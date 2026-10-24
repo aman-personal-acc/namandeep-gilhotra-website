@@ -4,6 +4,8 @@ import { Moon, Sun, Home as HomeIcon, Image as ImageIcon } from "lucide-react";
 import { useTheme } from "../../context/ThemeContext";
 import config from "../../configuration";
 
+import NavbarContentDropdown from "./NavbarContentDropdown";
+
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
@@ -34,6 +36,10 @@ const Header = () => {
               <HomeIcon size={18} />
               <span>Home</span>
             </Link>
+
+            {/* Content dropdown on hover */}
+            <NavbarContentDropdown />
+
             <Link to="/gallery" className="header-nav-link">
               <ImageIcon size={18} />
               <span>Gallery</span>

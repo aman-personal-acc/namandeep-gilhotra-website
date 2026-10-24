@@ -383,41 +383,6 @@ const config = {
         ],
     },
 
-    // References Section (Section 14 from LIST.md & Reference doc)
-    references: {
-        title: "References",
-        citations: [
-            {
-                id: 1,
-                text: "Gilhotra, Naman Deep (Kranti). Selected Poems and Recitations. Bijnor Press Archives, 2019.",
-            },
-            {
-                id: 2,
-                text: "District Administration Bijnor. 'Bijnor Mahotsav Concludes with Grand Kavi Sammelan'. Official Cultural Proceedings, 2023.",
-            },
-            {
-                id: 3,
-                text: "All India Radio (AIR). 'Yuva Vani & Kavyadhara Program Archives'. Broadcast Records, 2021.",
-            },
-            {
-                id: 4,
-                text: "Lalit Foundation Annual Report. 'National Literary Honors and Conventions 2022'. Ghaziabad Chapter.",
-            },
-            {
-                id: 5,
-                text: "Public Emotion Evening Daily. 'District Level Poets Meet: A Celebration of Verse'. Bijnor Edition, October 2019.",
-            },
-            {
-                id: 6,
-                text: "Bagwant Global University Academic Registry. Enrollment & Student Profile Records, Kotdwar, Uttarakhand, 2024.",
-            },
-            {
-                id: 7,
-                text: "Indian Writers Guild. Annual Fellowship Citations and Young Writers Directory, 2018.",
-            },
-        ],
-    },
-
     // External Links & Contact Section (Section 15 from LIST.md & Reference doc)
     externalLinks: {
         title: "External Links & Contact",
@@ -432,12 +397,6 @@ const config = {
                 title: "Instagram Profile",
                 url: "https://instagram.com",
                 description: "Official recitations and updates: @namandeep.kranti",
-                isInternal: false,
-            },
-            {
-                title: "YouTube Channel",
-                url: "https://youtube.com",
-                description: "Poetry performances and video readings",
                 isInternal: false,
             },
             {

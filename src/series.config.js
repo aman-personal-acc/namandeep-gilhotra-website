@@ -15,7 +15,6 @@ const seriesConfig = {
         'mediaAppearances',   // Radio, Press, and cultural festivals
         'timeline',           // Chronology & milestones
         'media',              // Photo gallery preview
-        'references',         // Wikipedia-style numbered references
         'externalLinks',      // External links and contact
     ],
 
@@ -32,7 +31,6 @@ const seriesConfig = {
         mediaAppearances: true,
         timeline: true,
         media: true,
-        references: true,
         externalLinks: true,
     },
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { ArrowLeft } from "lucide-react";
+import SEO from "../components/common/SEO";
 import config from "../configuration";
 
 const GalleryPage = () => {
@@ -14,6 +15,11 @@ const GalleryPage = () => {
       transition={{ duration: 0.4 }}
       className="container py-8"
     >
+      <SEO
+        title="Media Gallery"
+        description="Browse the photo gallery, stage recitals, literary events, and felicitation moments of Naman Deep Gilhotra 'Kranti'."
+        canonicalPath="/gallery"
+      />
       {/* Header */}
       <div style={{ marginBottom: "1.5rem" }}>
         <Link

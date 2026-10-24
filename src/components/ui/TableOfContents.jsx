@@ -18,7 +18,6 @@ const TableOfContents = () => {
     mediaAppearances: { title: "Media appearances and press", anchor: "media-appearances" },
     timeline: { title: "Chronology & milestones", anchor: "timeline" },
     media: { title: "Media gallery", anchor: "media" },
-    references: { title: "References", anchor: "references" },
     externalLinks: { title: "External links and contact", anchor: "external-links" },
   };
 

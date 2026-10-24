@@ -1,4 +1,5 @@
 import React from "react";
+import { Quote } from "lucide-react";
 import Section from "../layout/Section";
 import config from "../../configuration";
 
@@ -23,7 +24,20 @@ const AboutSection = () => {
   const imageSrc = getImageSrc(about.image || profile.profileImage);
 
   return (
-    <Section id="about" title={about.title}>
+    <Section id="about">
+      {/* Primary Page Title replacing the standalone title */}
+      <h1
+        style={{
+          fontSize: "2.5rem",
+          marginBottom: "1.25rem",
+          borderBottom: "1px solid var(--heading-border)",
+          paddingBottom: "0.5rem",
+          marginTop: "0.5rem",
+        }}
+      >
+        {about.title || profile.name}
+      </h1>
+
       {/* InfoBox */}
       <aside className="infobox">
         <div style={{ textAlign: "center", marginBottom: "1rem" }}>
@@ -99,6 +113,18 @@ const AboutSection = () => {
           </tbody>
         </table>
       </aside>
+
+      {/* Epigraph / Philosophy Quote directly above the core paragraph */}
+      {about.epigraph && (
+        <div className="wiki-epigraph-box">
+          <Quote size={22} className="wiki-epigraph-icon" />
+          <div className="wiki-epigraph-content">
+            <blockquote className="wiki-epigraph-text">
+              “{about.epigraph}”
+            </blockquote>
+          </div>
+        </div>
+      )}
 
       {/* Main Content */}
       <div>
