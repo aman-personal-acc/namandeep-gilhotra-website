@@ -59,18 +59,27 @@ const HomePage = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          style={{ fontSize: '2.5rem', marginBottom: '0.35rem' }}
+          style={{ fontSize: '2.5rem', marginBottom: '1.25rem' }}
         >
           {config.profile.name}
         </motion.h1>
 
-        {/* Wikipedia tagline */}
-        <div className="wiki-tagline">
-          From Wikipedia, the free encyclopedia
+        {/* Lead Section: Engaging Profile on Left, Table of Contents on Right */}
+        <div className="wiki-lead-section">
+          <div className="wiki-lead-content">
+            {config.about.epigraph && (
+              <blockquote className="wiki-epigraph">
+                “{config.about.epigraph}”
+              </blockquote>
+            )}
+            <p className="wiki-lead-bio">
+              {config.profile.bio}
+            </p>
+          </div>
+          <div className="wiki-lead-toc">
+            <TableOfContents />
+          </div>
         </div>
-
-        {/* Table of Contents */}
-        <TableOfContents />
         
         {/* Render sections based on series config */}
         {renderSections()}

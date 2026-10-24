@@ -19,9 +19,9 @@ const config = {
         notableWorks: "क्रांति (Kranti), Life with Disability (Upcoming)",
     },
 
-    // About Section
+    // About Section (renamed to primary title)
     about: {
-        title: "About Me",
+        title: "Naman Deep Gilhotra 'Kranti'",
         image: "https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/refs/heads/main/public/profile.png",
         epigraph: "The flame of cultural nationalism in my words, the resolve for social awakening in my heart, and a life dedicated to empowering every individual.",
         content: [

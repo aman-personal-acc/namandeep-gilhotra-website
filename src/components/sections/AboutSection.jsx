@@ -100,13 +100,6 @@ const AboutSection = () => {
         </table>
       </aside>
 
-      {/* Epigraph / Philosophy Quote */}
-      {about.epigraph && (
-        <blockquote className="wiki-epigraph">
-          “{about.epigraph}”
-        </blockquote>
-      )}
-
       {/* Main Content */}
       <div>
         {about.content && about.content.map((paragraph, index) => (
