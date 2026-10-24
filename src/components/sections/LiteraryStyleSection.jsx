@@ -11,9 +11,7 @@ const LiteraryStyleSection = () => {
   return (
     <Section id="literary-style" title={literaryStyle.title || "Literary Style and Themes"}>
       {literaryStyle.description && Array.isArray(literaryStyle.description) ? (
-        literaryStyle.description.map((paragraph, idx) => (
-          <p key={idx}>{paragraph}</p>
-        ))
+        literaryStyle.description.map((paragraph, idx) => <p key={idx}>{paragraph}</p>)
       ) : (
         <p>{literaryStyle.description}</p>
       )}
@@ -21,7 +19,14 @@ const LiteraryStyleSection = () => {
       <div className="grid-2" style={{ marginTop: "1.25rem" }}>
         {literaryStyle.themes && literaryStyle.themes.length > 0 && (
           <div className="card">
-            <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                marginBottom: "0.75rem",
+              }}
+            >
               <Sparkles size={18} color="var(--link-color)" />
               <h3 className="mt-0" style={{ fontSize: "1.05rem", marginBottom: 0 }}>
                 Core Themes (प्रमुख विषय)
@@ -39,7 +44,14 @@ const LiteraryStyleSection = () => {
 
         {literaryStyle.influences && literaryStyle.influences.length > 0 && (
           <div className="card">
-            <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                marginBottom: "0.75rem",
+              }}
+            >
               <Feather size={18} color="var(--link-color)" />
               <h3 className="mt-0" style={{ fontSize: "1.05rem", marginBottom: 0 }}>
                 Literary Influences (प्रेरणा स्रोत)

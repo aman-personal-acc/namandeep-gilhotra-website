@@ -11,7 +11,8 @@ const MediaAppearancesSection = () => {
   const getMediaIcon = (medium) => {
     const m = medium.toLowerCase();
     if (m.includes("radio")) return <Radio size={20} color="var(--link-color)" />;
-    if (m.includes("print") || m.includes("newspaper")) return <Newspaper size={20} color="var(--link-color)" />;
+    if (m.includes("print") || m.includes("newspaper"))
+      return <Newspaper size={20} color="var(--link-color)" />;
     if (m.includes("festival")) return <Mic size={20} color="#e07a5f" />;
     return <Award size={20} color="#3d85c6" />;
   };
@@ -22,9 +23,7 @@ const MediaAppearancesSection = () => {
         {mediaAppearances.items.map((item, index) => (
           <div key={index} className="card">
             <div className="card-content-row">
-              <div className="card-icon">
-                {getMediaIcon(item.medium)}
-              </div>
+              <div className="card-icon">{getMediaIcon(item.medium)}</div>
               <div className="card-content-flex">
                 <div
                   style={{

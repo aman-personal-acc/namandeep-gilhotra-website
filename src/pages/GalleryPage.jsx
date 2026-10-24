@@ -31,9 +31,7 @@ const GalleryPage = () => {
           Back to Home
         </Link>
         <h1>{media.title}</h1>
-        <p style={{ color: "var(--text-secondary)", marginTop: "0.5rem" }}>
-          {media.description}
-        </p>
+        <p style={{ color: "var(--text-secondary)", marginTop: "0.5rem" }}>{media.description}</p>
       </div>
 
       {/* Gallery Grid */}
@@ -48,7 +46,7 @@ const GalleryPage = () => {
           >
             <img
               src={imageSrc}
-              alt={`Gallery image ${index + 1}`}
+              alt={`${config.profile.name} - Gallery recital moment ${index + 1}`}
               loading="lazy"
             />
           </motion.div>

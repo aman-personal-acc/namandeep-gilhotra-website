@@ -11,15 +11,8 @@ const PoetrysSection = () => {
       <div className="grid-2">
         {poetrys.poems.map((poem, index) => (
           <div key={index} className="card">
-            <div
-              className="card-content-row"
-              style={{ marginBottom: "0.75rem" }}
-            >
-              <BookOpen
-                size={20}
-                color="var(--link-color)"
-                style={{ flexShrink: 0 }}
-              />
+            <div className="card-content-row" style={{ marginBottom: "0.75rem" }}>
+              <BookOpen size={20} color="var(--link-color)" style={{ flexShrink: 0 }} />
               <div className="card-content-flex">
                 <h3 className="mt-0" style={{ marginBottom: "0.25rem" }}>
                   {poem.title}

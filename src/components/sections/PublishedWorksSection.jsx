@@ -12,7 +12,11 @@ const PublishedWorksSection = () => {
     if (heading.toLowerCase().includes("antholog") || heading.toLowerCase().includes("संकलन")) {
       return <Library size={18} color="var(--link-color)" />;
     }
-    if (heading.toLowerCase().includes("journal") || heading.toLowerCase().includes("periodical") || heading.toLowerCase().includes("पत्रिका")) {
+    if (
+      heading.toLowerCase().includes("journal") ||
+      heading.toLowerCase().includes("periodical") ||
+      heading.toLowerCase().includes("पत्रिका")
+    ) {
       return <Newspaper size={18} color="var(--link-color)" />;
     }
     return <Book size={18} color="var(--link-color)" />;
@@ -28,7 +32,14 @@ const PublishedWorksSection = () => {
 
       {publishedWorks.categories.map((category, catIdx) => (
         <div key={catIdx} style={{ marginBottom: "1.5rem" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              marginBottom: "0.75rem",
+            }}
+          >
             {getCategoryIcon(category.heading)}
             <h3 style={{ margin: 0, fontSize: "1.15rem" }}>{category.heading}</h3>
           </div>
@@ -42,7 +53,9 @@ const PublishedWorksSection = () => {
                 {item.publisher && <span>, {item.publisher}</span>}
                 {item.volume && <span>, {item.volume}</span>}
                 {item.details && (
-                  <span style={{ color: "var(--text-secondary)", display: "block", fontSize: "0.9rem" }}>
+                  <span
+                    style={{ color: "var(--text-secondary)", display: "block", fontSize: "0.9rem" }}
+                  >
                     {item.details}
                   </span>
                 )}

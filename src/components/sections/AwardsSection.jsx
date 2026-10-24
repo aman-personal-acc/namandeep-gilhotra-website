@@ -28,10 +28,7 @@ const AwardsSection = () => {
                   <h3 className="mt-0" style={{ marginBottom: "0.25rem" }}>
                     {award.title}
                   </h3>
-                  <span
-                    className="caption"
-                    style={{ fontWeight: "600", fontStyle: "normal" }}
-                  >
+                  <span className="caption" style={{ fontWeight: "600", fontStyle: "normal" }}>
                     {award.year}
                   </span>
                 </div>

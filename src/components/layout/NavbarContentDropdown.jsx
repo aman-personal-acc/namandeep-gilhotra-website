@@ -69,7 +69,7 @@ const NavbarContentDropdown = () => {
         window.history.pushState(null, "", `#${anchor}`);
       }
     } else {
-      navigate(`/#${anchor}`);
+      void navigate(`/#${anchor}`);
     }
   };
 

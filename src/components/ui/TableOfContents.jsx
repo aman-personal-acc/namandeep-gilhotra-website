@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import seriesConfig from "../../series.config";
-import config from "../../configuration";
 
 const TableOfContents = () => {
   const [isOpen, setIsOpen] = useState(true);

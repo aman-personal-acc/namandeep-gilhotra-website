@@ -46,11 +46,7 @@ const Header = () => {
             </Link>
 
             {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="theme-toggle"
-              aria-label="Toggle theme"
-            >
+            <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
               {theme === "light" ? (
                 <Moon size={18} color="var(--text-primary)" />
               ) : (

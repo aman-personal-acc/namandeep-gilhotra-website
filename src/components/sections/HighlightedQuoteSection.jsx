@@ -18,9 +18,7 @@ const HighlightedQuoteSection = () => {
             style={{ flexShrink: 0, opacity: 0.7, marginTop: "0.2rem" }}
           />
           <div style={{ flex: 1 }}>
-            <blockquote className="wiki-quote-text">
-              {highlightedQuote.quote}
-            </blockquote>
+            <blockquote className="wiki-quote-text">{highlightedQuote.quote}</blockquote>
             <cite className="wiki-quote-author">
               — {highlightedQuote.author}
               {highlightedQuote.work && (

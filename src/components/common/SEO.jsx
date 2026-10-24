@@ -2,13 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import config from "../../configuration";
 
-const SEO = ({
-  title,
-  description,
-  canonicalPath = "",
-  type = "website",
-  image,
-}) => {
+const SEO = ({ title, description, canonicalPath = "", type = "website", image }) => {
   const siteUrl = "https://aman-personal-acc.github.io/namandeep-gilhotra-website";
   const defaultTitle = `${config.profile.name} | Hindu Thinker, Nationalist Poet & Analyst`;
   const defaultDescription =

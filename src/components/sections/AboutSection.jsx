@@ -119,39 +119,41 @@ const AboutSection = () => {
         <div className="wiki-epigraph-box">
           <Quote size={22} className="wiki-epigraph-icon" />
           <div className="wiki-epigraph-content">
-            <blockquote className="wiki-epigraph-text">
-              “{about.epigraph}”
-            </blockquote>
+            <blockquote className="wiki-epigraph-text">“{about.epigraph}”</blockquote>
           </div>
         </div>
       )}
 
       {/* Main Content */}
       <div>
-        {about.content && about.content.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
+        {about.content && about.content.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
 
         {/* Subsections if available */}
-        {about.subsections && about.subsections.map((subsec, sIdx) => (
-          <div key={sIdx} style={{ marginTop: "1.5rem" }}>
-            <h3 style={{ fontSize: "1.2rem", borderBottom: "1px solid var(--border-color)", paddingBottom: "0.25rem", marginBottom: "0.75rem" }}>
-              {subsec.heading}
-            </h3>
-            {subsec.paragraphs && subsec.paragraphs.map((p, pIdx) => (
-              <p key={pIdx}>{p}</p>
-            ))}
-            {subsec.items && (
-              <ul style={{ paddingLeft: "1.5rem", lineHeight: "1.8", marginBottom: "1rem" }}>
-                {subsec.items.map((item, iIdx) => (
-                  <li key={iIdx} style={{ marginBottom: "0.5rem" }}>
-                    <strong>{item.title}:</strong> {item.description}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
+        {about.subsections &&
+          about.subsections.map((subsec, sIdx) => (
+            <div key={sIdx} style={{ marginTop: "1.5rem" }}>
+              <h3
+                style={{
+                  fontSize: "1.2rem",
+                  borderBottom: "1px solid var(--border-color)",
+                  paddingBottom: "0.25rem",
+                  marginBottom: "0.75rem",
+                }}
+              >
+                {subsec.heading}
+              </h3>
+              {subsec.paragraphs && subsec.paragraphs.map((p, pIdx) => <p key={pIdx}>{p}</p>)}
+              {subsec.items && (
+                <ul style={{ paddingLeft: "1.5rem", lineHeight: "1.8", marginBottom: "1rem" }}>
+                  {subsec.items.map((item, iIdx) => (
+                    <li key={iIdx} style={{ marginBottom: "0.5rem" }}>
+                      <strong>{item.title}:</strong> {item.description}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
       </div>
     </Section>
   );

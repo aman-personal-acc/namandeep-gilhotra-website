@@ -1,15 +1,10 @@
-import React from 'react';
-import { motion } from 'motion/react';
+import React from "react";
+import { motion } from "motion/react";
 
 /**
  * Reusable section wrapper with animations
  */
-const Section = ({ 
-  id,
-  title, 
-  children, 
-  ...props 
-}) => {
+const Section = ({ id, title, children, ...props }) => {
   return (
     <motion.section
       id={id}

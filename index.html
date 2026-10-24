@@ -6,23 +6,31 @@
 
     <!-- Single Page Apps for GitHub Pages Redirect Unpacker -->
     <script>
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&');
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
         }
-      }(window.location));
+      })(window.location);
     </script>
 
     <!-- Primary Meta Tags -->
     <title>Naman Deep Gilhotra 'Kranti' | Hindu Thinker, Nationalist Poet & Analyst</title>
     <meta name="title" content="Naman Deep Gilhotra 'Kranti' | Official Portfolio" />
-    <meta name="description" content="Official portfolio of Naman Deep Gilhotra 'Kranti' — Hindu Thinker, Nationalist Poet, Political Analyst, Cerebral Palsy Survivor, and Founder of Divyang Jagrukta Mission." />
-    <meta name="keywords" content="Naman Deep Gilhotra, Kranti, Hindu Thinker, Nationalist Poet, Veer Ras, Cerebral Palsy Survivor, Divyang Jagrukta Mission, Chhatra Kranti, Bijnor, Sanatan, Life with Disability" />
+    <meta
+      name="description"
+      content="Official portfolio of Naman Deep Gilhotra 'Kranti' — Hindu Thinker, Nationalist Poet, Political Analyst, Cerebral Palsy Survivor, and Founder of Divyang Jagrukta Mission."
+    />
+    <meta
+      name="keywords"
+      content="Naman Deep Gilhotra, Kranti, Hindu Thinker, Nationalist Poet, Veer Ras, Cerebral Palsy Survivor, Divyang Jagrukta Mission, Chhatra Kranti, Bijnor, Sanatan, Life with Disability"
+    />
     <meta name="author" content="Naman Deep Gilhotra 'Kranti'" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#0b0e18" />
@@ -36,65 +44,84 @@
 
     <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
     <meta property="og:type" content="profile" />
-    <meta property="og:url" content="https://aman-personal-acc.github.io/namandeep-gilhotra-website/" />
+    <meta
+      property="og:url"
+      content="https://aman-personal-acc.github.io/namandeep-gilhotra-website/"
+    />
     <meta property="og:site_name" content="Naman Deep Gilhotra 'Kranti'" />
-    <meta property="og:title" content="Naman Deep Gilhotra 'Kranti' | Hindu Thinker & Nationalist Poet" />
-    <meta property="og:description" content="Explore the life, literary works, poetry, and social advocacy of Naman Deep Gilhotra 'Kranti'." />
-    <meta property="og:image" content="https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/main/public/profile.png" />
+    <meta
+      property="og:title"
+      content="Naman Deep Gilhotra 'Kranti' | Hindu Thinker & Nationalist Poet"
+    />
+    <meta
+      property="og:description"
+      content="Explore the life, literary works, poetry, and social advocacy of Naman Deep Gilhotra 'Kranti'."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/main/public/profile.png"
+    />
     <meta property="og:image:alt" content="Naman Deep Gilhotra 'Kranti' reciting poetry" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://aman-personal-acc.github.io/namandeep-gilhotra-website/" />
+    <meta
+      name="twitter:url"
+      content="https://aman-personal-acc.github.io/namandeep-gilhotra-website/"
+    />
     <meta name="twitter:title" content="Naman Deep Gilhotra 'Kranti' | Official Portfolio" />
-    <meta name="twitter:description" content="Official portfolio of Naman Deep Gilhotra 'Kranti' — Hindu Thinker, Nationalist Poet, and Social Entrepreneur." />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/main/public/profile.png" />
+    <meta
+      name="twitter:description"
+      content="Official portfolio of Naman Deep Gilhotra 'Kranti' — Hindu Thinker, Nationalist Poet, and Social Entrepreneur."
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/main/public/profile.png"
+    />
 
     <!-- Schema.org JSON-LD Structured Data for Google Knowledge Graph & Rich Results -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://aman-personal-acc.github.io/namandeep-gilhotra-website/#person",
-          "name": "Naman Deep Gilhotra",
-          "alternateName": "Kranti",
-          "birthDate": "1999-11-19",
-          "birthPlace": {
-            "@type": "Place",
-            "name": "Bijnor, Uttar Pradesh, India"
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://aman-personal-acc.github.io/namandeep-gilhotra-website/#person",
+            "name": "Naman Deep Gilhotra",
+            "alternateName": "Kranti",
+            "birthDate": "1999-11-19",
+            "birthPlace": {
+              "@type": "Place",
+              "name": "Bijnor, Uttar Pradesh, India"
+            },
+            "jobTitle": "Hindu Thinker, Nationalist Poet, Political Analyst, Author, Youth Leader, Social Entrepreneur",
+            "alumniOf": {
+              "@type": "EducationalOrganization",
+              "name": "Bagwant Global University"
+            },
+            "knowsAbout": [
+              "Sanatan Culture",
+              "Veer Ras Poetry",
+              "Disability Rights Advocacy",
+              "Political Analysis",
+              "Nationalist Literature"
+            ],
+            "url": "https://aman-personal-acc.github.io/namandeep-gilhotra-website/",
+            "image": "https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/main/public/profile.png",
+            "sameAs": ["https://instagram.com/namandeep.kranti"]
           },
-          "jobTitle": "Hindu Thinker, Nationalist Poet, Political Analyst, Author, Youth Leader, Social Entrepreneur",
-          "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "Bagwant Global University"
-          },
-          "knowsAbout": [
-            "Sanatan Culture",
-            "Veer Ras Poetry",
-            "Disability Rights Advocacy",
-            "Political Analysis",
-            "Nationalist Literature"
-          ],
-          "url": "https://aman-personal-acc.github.io/namandeep-gilhotra-website/",
-          "image": "https://raw.githubusercontent.com/aman-personal-acc/namandeep-gilhotra-website/main/public/profile.png",
-          "sameAs": [
-            "https://instagram.com/namandeep.kranti"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://aman-personal-acc.github.io/namandeep-gilhotra-website/#website",
-          "url": "https://aman-personal-acc.github.io/namandeep-gilhotra-website/",
-          "name": "Naman Deep Gilhotra 'Kranti' Official Website",
-          "description": "Official website and portfolio of Naman Deep Gilhotra 'Kranti'",
-          "publisher": {
-            "@id": "https://aman-personal-acc.github.io/namandeep-gilhotra-website/#person"
+          {
+            "@type": "WebSite",
+            "@id": "https://aman-personal-acc.github.io/namandeep-gilhotra-website/#website",
+            "url": "https://aman-personal-acc.github.io/namandeep-gilhotra-website/",
+            "name": "Naman Deep Gilhotra 'Kranti' Official Website",
+            "description": "Official website and portfolio of Naman Deep Gilhotra 'Kranti'",
+            "publisher": {
+              "@id": "https://aman-personal-acc.github.io/namandeep-gilhotra-website/#person"
+            }
           }
-        }
-      ]
-    }
+        ]
+      }
     </script>
   </head>
   <body>
